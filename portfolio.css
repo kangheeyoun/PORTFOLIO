@@ -48,7 +48,7 @@ main {
 
 main > .all {
     display: flex;
-    flex-direction: column;  /* h2-all과 main-all을 세로로 정렬 */
+    flex-direction: column;  
 }
 
 main > nav > ul {
@@ -86,129 +86,30 @@ main > .all > .h2-all > h2:nth-of-type(2) {
     color: #00B8D4;
 }
 
-/* main-all을 h2-all 바로 아래에 배치하고 가로로 정렬 */
 main > .all > .main-all {
     display: flex;
-    align-items: center;  /* 수직 가운데 정렬 */
-    justify-content: space-between;  /* 좌우로 공간 분배 */
-    margin-top: 50px;  /* h2-all과 main-all 사이에 여백을 추가 */
+    align-items: center;  
+    justify-content: space-between;  
+    margin-top: 50px; 
 }
 
-/* main-a는 왼쪽에 고정되도록 설정 */
 main > .all > .main-all > .main-a {
     display: flex;
-    flex-direction: column;  /* 세로로 쌓이지 않고, 수평으로 배치 */
-    gap: 10px;  /* 항목 사이 간격 조절 */
-    text-align: left;  /* 왼쪽 정렬 */
-    color: #fff;  /* 텍스트 색상 */
+    flex-direction: column;  
+    gap: 10px;  
+    text-align: left;  
+    color: #fff;  
     font-size: 18px;
 }
 
-/* 이미지 크기 조정 */
 main > .all > .main-all > img {
     width: 480px;
     height: 600px;
     border-radius: 15px;
-    margin-left: 30px;  /* 이미지 왼쪽 여백 */
+    margin-left: 30px;  
 }
 
-/*** clone-site ***/
-.clone-all {
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-}
-
-.clone-Site {
-    overflow-x: auto; /* 수평 스크롤 활성화 */
-    white-space: nowrap;
-    display: flex;
-}
-
-.clone-all > h2 {
-    font-family: 'PyeongChangPeace-Bold';
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 100px;
-    padding: 50px;
-}
-
-/* .clone-wrap들 가로로 정렬 */
-.clone-Site > .clone-wrap1,
-.clone-Site > .clone-wrap2,
-.clone-Site > .clone-wrap3,
-.clone-Site > .clone-wrap4 {
-    flex-shrink: 0; /* 축소되지 않게 설정 */
-    display: flex; /* 자식 요소들이 가로로 나열되도록 설정 */
-    align-items: center; /* 각 항목들을 가운데 정렬 */
-    margin: 0 150px;
-}
-
-/* 각 항목의 내용 */
-.clone-Site > .clone-wrap1 > .clone-a,
-.clone-Site > .clone-wrap2 > .clone-b,
-.clone-Site > .clone-wrap3 > .clone-c,
-.clone-Site > .clone-wrap4 > .clone-d {
-    margin: 50px;
-    padding-bottom: 50px;
-    color: #ffffff;
-}
-
-/* 버튼 스타일 */
-.clone-Site > .clone-wrap1 > .clone-a > button,
-.clone-Site > .clone-wrap2 > .clone-b > button,
-.clone-Site > .clone-wrap3 > .clone-c > button,
-.clone-Site > .clone-wrap4 > .clone-d > button {
-    width: 300px;
-    height: 60px;
-    margin: 50px 0;
-    cursor: pointer;
-    border: none;
-    background-color: #FFC0CB;
-    font-family: 'PyeongChangPeace-Bold';
-    border-radius: 10px;
-    font-size: 30px;
-}
-
-/* 제목 스타일 */
-.clone-Site > .clone-wrap1 > .clone-a > h3,
-.clone-Site > .clone-wrap2 > .clone-b > h3,
-.clone-Site > .clone-wrap3 > .clone-c > h3,
-.clone-Site > .clone-wrap4 > .clone-d > h3 {
-    font-size: 50px;
-    color: #fff;
-}
-
-.clone-Site > .clone-wrap1 > .clone-a > h5,
-.clone-Site > .clone-wrap2 > .clone-b > h5,
-.clone-Site > .clone-wrap3 > .clone-c > h5,
-.clone-Site > .clone-wrap4 > .clone-d > h5 {
-    margin: 20px 0;
-    font-size: 30px;
-    color: #fff;
-}
-
-/* 텍스트 스타일 */
-.clone-Site > .clone-wrap1 > .clone-a > p,
-.clone-Site > .clone-wrap2 > .clone-b > p,
-.clone-Site > .clone-wrap3 > .clone-c> p,
-.clone-Site > .clone-wrap4 > .clone-d > p {
-    font-size: 25px;
-    color: #fff;
-}
-
-/* 이미지 스타일 */
-.clone-Site > .clone-wrap1 > img,
-.clone-Site > .clone-wrap2 > img,
-.clone-Site > .clone-wrap3 > img,
-.clone-Site > .clone-wrap4 > img {
-    margin: 50px;
-    width: 800px;
-    height: 600px;
-    border-radius: 8px; /* 이미지를 둥글게 */
-}
-
-/***About section***/
+/* **skill section** */
 section {
     width: 100%;
     height: 100vh;
@@ -240,3 +141,95 @@ section > h2 > hr {
     border: none;
     border-radius: 7px;
 }
+
+
+/*** clone-site ***/
+.clone-all {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+
+.clone-Site {
+    overflow-x: auto; 
+    white-space: nowrap;
+    display: flex;
+}
+
+.clone-all > h2 {
+    font-family: 'PyeongChangPeace-Bold';
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 100px;
+    padding: 50px;
+}
+
+.clone-Site > .clone-wrap1,
+.clone-Site > .clone-wrap2,
+.clone-Site > .clone-wrap3,
+.clone-Site > .clone-wrap4 {
+    flex-shrink: 0; 
+    display: flex; 
+    align-items: center; 
+    margin: 0 150px;
+}
+
+.clone-Site > .clone-wrap1 > .clone-a,
+.clone-Site > .clone-wrap2 > .clone-b,
+.clone-Site > .clone-wrap3 > .clone-c,
+.clone-Site > .clone-wrap4 > .clone-d {
+    margin: 50px;
+    padding-bottom: 50px;
+    color: #ffffff;
+}
+
+.clone-Site > .clone-wrap1 > .clone-a > button,
+.clone-Site > .clone-wrap2 > .clone-b > button,
+.clone-Site > .clone-wrap3 > .clone-c > button,
+.clone-Site > .clone-wrap4 > .clone-d > button {
+    width: 300px;
+    height: 60px;
+    margin: 50px 0;
+    cursor: pointer;
+    border: none;
+    background-color: #FFC0CB;
+    font-family: 'PyeongChangPeace-Bold';
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.clone-Site > .clone-wrap1 > .clone-a > h3,
+.clone-Site > .clone-wrap2 > .clone-b > h3,
+.clone-Site > .clone-wrap3 > .clone-c > h3,
+.clone-Site > .clone-wrap4 > .clone-d > h3 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.clone-Site > .clone-wrap1 > .clone-a > h5,
+.clone-Site > .clone-wrap2 > .clone-b > h5,
+.clone-Site > .clone-wrap3 > .clone-c > h5,
+.clone-Site > .clone-wrap4 > .clone-d > h5 {
+    margin: 20px 0;
+    font-size: 30px;
+    color: #fff;
+}
+
+.clone-Site > .clone-wrap1 > .clone-a > p,
+.clone-Site > .clone-wrap2 > .clone-b > p,
+.clone-Site > .clone-wrap3 > .clone-c> p,
+.clone-Site > .clone-wrap4 > .clone-d > p {
+    font-size: 25px;
+    color: #fff;
+}
+
+.clone-Site > .clone-wrap1 > img,
+.clone-Site > .clone-wrap2 > img,
+.clone-Site > .clone-wrap3 > img,
+.clone-Site > .clone-wrap4 > img {
+    margin: 50px;
+    width: 800px;
+    height: 600px;
+    border-radius: 8px; /* 이미지를 둥글게 */
+}
+
