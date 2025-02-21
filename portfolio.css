@@ -90,7 +90,7 @@ main > .all > .main-all {
     display: flex;
     align-items: center;  
     justify-content: space-between;  
-    margin-top: 50px; 
+    padding:  50px;
 }
 
 main > .all > .main-all > .main-a {
@@ -141,7 +141,6 @@ section > h2 > hr {
     border: none;
     border-radius: 7px;
 }
-
 
 /*** clone-site ***/
 .clone-all {
@@ -233,3 +232,44 @@ section > h2 > hr {
     border-radius: 8px; /* 이미지를 둥글게 */
 }
 
+
+/*** Website Publishing ***/
+.web-all{
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.web-all > .web-1,
+.web-all > .web-2,
+.web-all > .web-3{
+    text-align: center;
+    margin: 50px;
+}
+.web-all > h2{
+    font-family: 'PyeongChangPeace-Bold';
+    color: #00B8D4;
+}
+.web-all > .web-1 > img,
+.web-all > .web-2 > img,
+.web-all > .web-3 > img{
+    width: 300px;
+    height: 200px;
+}
+
+.web-all > .web-1 > .web-a > p{
+}
+.web-all > .web-1 > .web-a > h4{
+}
+.web-all > .web-1 > .web-a > button,
+.web-all > .web-2 > .web-b > button,
+.web-all > .web-3 > .web-c > button{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #B0B0B0;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: #333333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
